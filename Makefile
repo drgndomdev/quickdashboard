@@ -5,11 +5,12 @@ BIN		:= bin
 SRC		:= src/*.cpp $(shell find $(lib) -name *.cpp)
 INCLUDE	:= -Iinclude -Ilib \
  -I/usr/local/include/mongocxx/v_noabi \
- -I/usr/local/include/bsoncxx/v_noabi
+ -I/usr/local/include/bsoncxx/v_noabi \
+ -I/usr/include/python3.10 
 LIB		:= lib
 
 LIBRARIES	:= -lboost_system -lpthread -lcrypto \
--lssl -lmongocxx -lbsoncxx
+-lssl -lmongocxx -lbsoncxx -lpython3.10
 EXECUTABLE	:= main
 
 
