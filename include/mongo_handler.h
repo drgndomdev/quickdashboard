@@ -3,7 +3,6 @@
 #include <cstdint>
 #include <string>
 
-#include "bsoncxx/builder/stream/document.hpp"
 #include "bsoncxx/json.hpp"
 #include "bsoncxx/oid.hpp"
 #include "character_size.h"
