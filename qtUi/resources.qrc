@@ -1,0 +1,6 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource>
+        <file>templates/stocks.html</file>
+        <file>templates/MSFT_candlestick.html</file>
+    </qresource>
+</RCC>

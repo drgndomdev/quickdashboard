@@ -1,15 +1,15 @@
 #pragma once
 
-#include <bsoncxx/builder/stream/helpers.hpp>
 #include <cstdint>
-#include <mongocxx/collection.hpp>
 #include <string>
 #include <ctime>
 
+
 #include "bsoncxx/json.hpp"
+#include <bsoncxx/builder/stream/helpers.hpp>
+#include <mongocxx/collection.hpp>
 #include "bsoncxx/oid.hpp"
 #include "bsoncxx/builder/stream/document.hpp"
-// #include "character_size.h"
 #include "mongocxx/client.hpp"
 #include "mongocxx/database.hpp"
 #include "mongocxx/uri.hpp"
@@ -70,11 +70,27 @@ namespace cppMongod {
                     builder << "Record" << record
                             << "NumberValue" << number << bsoncxx::builder::stream::finalize;
 
-                collection.insert_one(add_document.view())
-            }
-            bool UpdateRecord(const std::string &record) {
+                collection.insert_one(add_document.view());
                 return true;
             }
+
+            bool UpdateRecord(const std::string &id) {
+                mongocxx::collection collection = db[kCollection];
+                auto builder = bsoncxx::builder::stream::document{};
+
+                bsoncxx::oid doc_id(id);
+
+                bsoncxx::document::value update_query = 
+                    builder << "_id" << doc_id << bsoncxx::builder::stream::finalize;
+
+                // TODO: update found query
+
+                // TODO: Commit changes
+                // collection.update_one(update_query.view()); 
+
+                return true;
+            }
+
             bool RemoveRecord(const std::string &record) {
                 return true;
             }
