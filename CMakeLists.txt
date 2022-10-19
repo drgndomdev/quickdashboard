@@ -11,7 +11,7 @@ add_executable(QuickDashBoard)
 target_sources(QuickDashBoard # 
     PRIVATE
         include/mongo_handler.h
-        src/database.cpp
+        src/main.cpp
         src/pyGraphs.cpp
 )
 

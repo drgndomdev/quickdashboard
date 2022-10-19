@@ -2,7 +2,7 @@
 
 #include "mongocxx/instance.hpp"
 
-#include "mongo_handler.h"
+#include "../include/mongo_handler.h"
 
 int main() {
     std::cout << "Hello World!" << std::endl;

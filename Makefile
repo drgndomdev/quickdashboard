@@ -132,29 +132,29 @@ QuickDashBoard/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuickDashBoard.dir/build.make CMakeFiles/QuickDashBoard.dir/build
 .PHONY : QuickDashBoard/fast
 
-src/database.o: src/database.cpp.o
-.PHONY : src/database.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/database.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuickDashBoard.dir/build.make CMakeFiles/QuickDashBoard.dir/src/database.cpp.o
-.PHONY : src/database.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuickDashBoard.dir/build.make CMakeFiles/QuickDashBoard.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/database.i: src/database.cpp.i
-.PHONY : src/database.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/database.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuickDashBoard.dir/build.make CMakeFiles/QuickDashBoard.dir/src/database.cpp.i
-.PHONY : src/database.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuickDashBoard.dir/build.make CMakeFiles/QuickDashBoard.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/database.s: src/database.cpp.s
-.PHONY : src/database.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/database.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuickDashBoard.dir/build.make CMakeFiles/QuickDashBoard.dir/src/database.cpp.s
-.PHONY : src/database.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuickDashBoard.dir/build.make CMakeFiles/QuickDashBoard.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 src/pyGraphs.o: src/pyGraphs.cpp.o
 .PHONY : src/pyGraphs.o
@@ -189,9 +189,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... QuickDashBoard"
-	@echo "... src/database.o"
-	@echo "... src/database.i"
-	@echo "... src/database.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... src/pyGraphs.o"
 	@echo "... src/pyGraphs.i"
 	@echo "... src/pyGraphs.s"
