@@ -156,30 +156,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuickDashBoard.dir/build.make CMakeFiles/QuickDashBoard.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/pyGraphs.o: src/pyGraphs.cpp.o
-.PHONY : src/pyGraphs.o
-
-# target to build an object file
-src/pyGraphs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuickDashBoard.dir/build.make CMakeFiles/QuickDashBoard.dir/src/pyGraphs.cpp.o
-.PHONY : src/pyGraphs.cpp.o
-
-src/pyGraphs.i: src/pyGraphs.cpp.i
-.PHONY : src/pyGraphs.i
-
-# target to preprocess a source file
-src/pyGraphs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuickDashBoard.dir/build.make CMakeFiles/QuickDashBoard.dir/src/pyGraphs.cpp.i
-.PHONY : src/pyGraphs.cpp.i
-
-src/pyGraphs.s: src/pyGraphs.cpp.s
-.PHONY : src/pyGraphs.s
-
-# target to generate assembly for a file
-src/pyGraphs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuickDashBoard.dir/build.make CMakeFiles/QuickDashBoard.dir/src/pyGraphs.cpp.s
-.PHONY : src/pyGraphs.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,9 +168,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/pyGraphs.o"
-	@echo "... src/pyGraphs.i"
-	@echo "... src/pyGraphs.s"
 .PHONY : help
 
 

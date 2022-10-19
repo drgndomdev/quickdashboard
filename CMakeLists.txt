@@ -12,7 +12,6 @@ target_sources(QuickDashBoard #
     PRIVATE
         include/mongo_handler.h
         src/main.cpp
-        src/pyGraphs.cpp
 )
 
 target_link_libraries(QuickDashBoard 
